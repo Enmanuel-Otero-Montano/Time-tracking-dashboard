@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/favicon/favicon-32x32.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles-dist.css">
+    <title>Time tracking dashboard</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__container--profile">
+            <img src="assets/images/image-jeremy.png" alt="foto de perfil de Jeremy" class="photo">
+            <p class="report">Report for</p>
+            <h1 class="name">Jeremy Robson</h1>
+        </div>
+        <div class="header__container--buttons">
+            <button id="daily" class="button">Daily</button>
+            <button id="weekly" class="button">Weekly</button>
+            <button id="monthly" class="button">Monthly</button>
+        </div>
+    </header>
+    <section class="card work">
+        <div class="icon-container">
+            <img src="assets/images/icon-work.svg" alt="icono ilustrativo de la seccion work" class="icon">
+        </div>
+        <div class="status-container">
+            <h2 class="status-name">Work</h2>
+            <svg xmlns="http://www.w3.org/2000/svg" class="status-button" role="button" width="21" height="5"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+            <p class="current"></p>
+            <p class="previous"></p>
+        </div>
+    </section>
+    <section class="card play">
+        <div class="icon-container">
+            <img src="assets/images/icon-play.svg" alt="icono ilustrativo de la seccion play" class="icon">
+        </div>
+        <div class="status-container">
+            <h2 class="status-name">Play</h2>
+            <svg xmlns="http://www.w3.org/2000/svg" class="status-button" role="button" width="21" height="5"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+            <p class="current"></p>
+            <p class="previous"></p>
+        </div>
+    </section>
+    <section class="card study">
+        <div class="icon-container">
+            <img src="assets/images/icon-study.svg" alt="icono ilustrativo de la seccion study" class="icon">
+        </div>
+        <div class="status-container">
+            <h2 class="status-name">Study</h2>
+            <svg xmlns="http://www.w3.org/2000/svg" class="status-button" role="button" width="21" height="5"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+            <p class="current"></p>
+            <p class="previous"></p>
+        </div>
+    </section>
+    <section class="card exercise">
+        <div class="icon-container">
+            <img src="assets/images/icon-exercise.svg" alt="icono ilustrativo de la seccion exercise" class="icon">
+        </div>
+        <div class="status-container">
+            <h2 class="status-name">Exercise</h2>
+            <svg xmlns="http://www.w3.org/2000/svg" class="status-button" role="button" width="21" height="5"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+            <p class="current"></p>
+            <p class="previous"></p>
+        </div>
+    </section>
+    <section class="card social">
+        <div class="icon-container">
+            <img src="assets/images/icon-social.svg" alt="icono ilustrativo de la seccion social" class="icon">
+        </div>
+        <div class="status-container">
+            <h2 class="status-name">Social</h2>
+            <svg xmlns="http://www.w3.org/2000/svg" class="status-button" role="button" width="21" height="5"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+            <p class="current"></p>
+            <p class="previous"></p>
+        </div>
+    </section>
+    <section class="card self-care">
+        <div class="icon-container">
+            <img src="assets/images/icon-self-care.svg" alt="icono ilustrativo de la seccion self-care" class="icon">
+        </div>
+        <div class="status-container">
+            <h2 class="status-name">Self Care</h2>
+            <svg xmlns="http://www.w3.org/2000/svg" class="status-button" role="button" width="21" height="5"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+            <p class="current"></p>
+            <p class="previous"></p>
+        </div>
+    </section>
+    <script src="js/js.js"></script>
+</body>
+</html>
