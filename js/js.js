@@ -7,7 +7,7 @@ const previous = document.querySelectorAll(".previous")
 
 
 const petition = () => {
-    fetch("/data.json")
+    fetch("data.json")
     .then(res => res.ok == true ? Promise.resolve(res) : Promise.reject(res))
     .then(res => res.json())
     .then(res => {
@@ -24,7 +24,7 @@ dailyButton.addEventListener("click", () => {
 })
 
 weeklyButton.addEventListener("click", () => {
-    fetch("/data.json")
+    fetch("data.json")
         .then(res => res.ok == true ? Promise.resolve(res) : Promise.reject(res))
         .then(res => res.json())
         .then(res => {
@@ -36,7 +36,7 @@ weeklyButton.addEventListener("click", () => {
 })
 
 monthlyButton.addEventListener("click", () => {
-    fetch("/data.json")
+    fetch("data.json")
         .then(res => res.ok == true ? Promise.resolve(res) : Promise.reject(res))
         .then(res => res.json())
         .then(res => {
