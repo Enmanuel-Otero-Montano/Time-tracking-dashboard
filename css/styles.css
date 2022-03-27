@@ -188,6 +188,28 @@ body {
     color: var(--card-tittle-color);
 }
 
+.active {
+    color: hsl(0, 0%, 100%);
+}
+
+@media (hover: hover) {
+
+    .status-button:hover > path {
+        fill: hsl(0, 0%, 100%);
+    }
+
+    .button:hover {
+        cursor: pointer;
+        color: var(--hover-buttons-card);
+    }
+    
+    .status-container:hover {
+        cursor: pointer;
+        background-color: hsl(235, 45%, 30%);
+        transition: background-color 1s;
+    }
+}
+
 /* Estilos para pantallas con un width mayor o igual a 1024px */
 
 @media (min-width: 1024px) {
@@ -254,10 +276,6 @@ body {
         left: 175px;
     }
 
-    .status-button > path:hover {
-        fill: hsl(0, 0%, 100%);
-    }
-
     .work,
     .play,
     .study {
@@ -285,17 +303,6 @@ body {
     .self-care {
         grid-row: 3 / 4;
         align-self: start;
-    }
-
-    .button:hover {
-        cursor: pointer;
-        color: var(--hover-buttons-card);
-    }
-    
-    .status-container:hover {
-        cursor: pointer;
-        background-color: hsl(235, 45%, 30%);
-        transition: background-color 1s;
     }
 }
 

@@ -3,10 +3,12 @@ const weeklyButton = document.getElementById("weekly")
 const monthlyButton = document.getElementById("monthly")
 const current = document.querySelectorAll(".current")
 const previous = document.querySelectorAll(".previous")
+const buttons = document.querySelectorAll(".button")
 
 
 
 const petition = () => {
+    dailyButton.classList.add("active")
     fetch("data.json")
     .then(res => res.ok == true ? Promise.resolve(res) : Promise.reject(res))
     .then(res => res.json())
@@ -17,7 +19,7 @@ const petition = () => {
         }
     })
 }
-petition()
+document.addEventListener("DOMContentLoaded",petition());
 
 dailyButton.addEventListener("click", () => {
     petition()
@@ -46,3 +48,15 @@ monthlyButton.addEventListener("click", () => {
             }
         })
 })
+
+//Función para remover la clase "active", que le da color al texto de los botones.
+//const removeActive = ()=> {
+    for(const button of buttons) {
+        button.addEventListener("click", ()=> {
+            for(const removeActive of buttons) {
+                removeActive.classList.remove("active")
+            }
+            button.classList.add("active")
+        })
+    }
+//}
